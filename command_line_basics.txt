@@ -1,0 +1,4 @@
+Knowledge Check:
+What is the command line?
+    The command line, or Command Line Interface (CLI), is a software tool that runs commands that are fed into it. It is often
+    used to improve the effiency of running other programs as well as navigating file systems.

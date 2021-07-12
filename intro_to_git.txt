@@ -1,0 +1,32 @@
+Knowledge Check
+What kind of program is Git?
+    Git is a Version Control System (VCS) which means that it helps to track changes made to documents over time for the
+    purposes of recalling previous versions of those documents in the future. More specifically, Git is a Distributed VCS, which 
+    means that when a client checks out a repository, they are not checking out the most recent snapshot of documents but the 
+    entire edit history of those documents. This provides the advantage of faster lookup times and added security against 
+    losing the data in the repository.
+
+What are the differences between Git and a text editor in terms of what they save and their record keeping?
+    - Git makes the differences between versions more explicit
+    - Text editors often only track changes to a document for the time the editor is open. Changes made in previous sessions
+        will not be available.
+    - When using a text editor, if the user needs to revert back to a previous version, they may have to press the undo button 
+        many times. 
+    - Git gives the user control over when to take a "snapshot" of their document, allowing the user to be more deliberate
+        over what changes are actually tracked.
+
+Does Git work at a local or remote level?
+    Local.
+
+Does GitHub work at a local or remote level?
+    Remote.
+
+Why is Git useful for an individual developer?
+    The ability to revert to discrete versions of your code adds a layer of security.
+
+Why are Git and GitHub useful for a team of developers?
+    - It's easy and relatively "cheap" to create branches compared to other VCSs.
+    - Git is supportive of nonlinear development.
+    - Even if repository data is corrupted on the "central" Github servers, an older version of that repository can be restored
+        using local copies of repositories from the dev team.
+    - Team members won't have to rely on an internet connection to access the repository history.
