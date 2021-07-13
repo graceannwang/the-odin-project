@@ -1,1 +1,6 @@
 Knowledge Check
+
+Useful Links:
+The Git object model: https://medium.com/mindorks/what-is-git-object-model-6009c271ca66
+More on Git object model & branching: https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell
+Git Cheatsheet: https://education.github.com/git-cheat-sheet-education.pdf
