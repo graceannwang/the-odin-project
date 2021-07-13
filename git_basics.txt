@@ -1,6 +1,39 @@
 Knowledge Check
+    What is the Git command used to get a full copy of an existing Git repository from GitHub?
+        git clone <url>
+
+    What is the Git command used to check the status of your files?
+        git status 
+
+    What is the Git command used to track files with Git?
+        Tracked files are any files that were in the last commit. So, to track a file, you must:
+            git add <file>
+            git commit -m <message>
+
+    What is the Git command used to remove tracked files with Git?
+        git reset <file>
+
+    What is the Git command used to commit files?
+        git commit -m <message>
+
+    What is the Git command used to view your commit history?
+        git log
+
+    What is the Git command used to upload projects onto GitHub?
+        git push
+
+    Explain the two-stage system that Git uses to save files.
+        A file must be "staged" before it can be committed to a repository. Staging a file tells
+        git that that file is ready to be committed.
+
+    Explain what origin is in git push origin main.
+        Shorthand name of the original remote repository's URL.
+
+    Explain what main is in git push origin main.
+        Name of the branch git creates upon initialization.
+
 
 Useful Links:
-The Git object model: https://medium.com/mindorks/what-is-git-object-model-6009c271ca66
-More on Git object model & branching: https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell
-Git Cheatsheet: https://education.github.com/git-cheat-sheet-education.pdf
+    The Git object model: https://medium.com/mindorks/what-is-git-object-model-6009c271ca66
+    More on Git object model & branching: https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell
+    Git Cheatsheet: https://education.github.com/git-cheat-sheet-education.pdf
