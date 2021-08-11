@@ -1,0 +1,78 @@
+LEARNING OUTCOMES
+Why do we separate HTML and CSS?
+    HTML and CSS serve different functions on a webpage, thus it makes sense for them
+    to be separated. HTML outlines the basic content of the webpage, and CSS styles it.
+What are classes and IDs (and how are they different?)
+    Classes and IDs help to link HTML elements to CSS. CSS uses the class or ID names
+    of certain HTML elements to apply certain styles to those elements. IDs are different
+    than classes in that they must be unique.
+What are elements?
+    Elements are individual, semantic components of HTML. They are like the building 
+    blocks of the document, denoting meaning to its segments. For example, the p element
+    is used to hold paragraph content. 
+What are tags?
+    In HTML, tags are syntactic markers to denote the start and end of an element. 
+What are attributes?
+    Attributes reside within elements and its starting tag, and provide additional
+    information to an element. For example, "class: className" is an attribute
+    that can be added to an element.
+What are forms?
+    A form is an HTML element that denotes a section of the webpage that the user must
+    input information into, which can then be sent to a server for processing.
+What is a div?
+    A div is an HTML element that can be used to group other HTML elements together. 
+    They create *divisions* within an document.
+What are selectors?
+    Selectors are components of CSS that are used to *select* certain HTML elements
+    so that styles can be applied to them.
+What are properties?
+    Properties are characterizing elements of a CSS selected item that styles can by 
+    applied to. 
+What are values?
+    Values define what quantative values CSS properties are set to.
+What is the "query string" in a URL and what does it do?
+    The query string is a portion of the URL that contains key words and are processed
+    by the web server.
+What is the difference between "pixels" and "ems"?
+    Pixels are a static unit of measurement. Ems is a measurement relative to the
+    parent.
+How do CSS styles for a particular element get inherited? i.e. how does an element 
+get its “default” styles?
+    CSS styles for an element get inherited from its parent element. If its parent
+    element doesn't have the style defined, then the style from the parent of the 
+    parent is inherited, and so on. In this way, assignment of a style 'cascades'
+    through the parent elements starting with the most immediate parent.
+What are two CSS attributes you can change to push an element around on the page?
+    Margin and padding. 
+What are the three different ways to include CSS in your project or use CSS to style 
+a particular element?
+    As a separate .css file, included in <head> tag. Using the <style> and </style> tags. 
+    Inline.
+What is the “default stylesheet” or “user agent stylesheet”?
+    The default stylesheet is CSS styling built into the browser that is applied when 
+    no other styling is supplied.
+Why use a CSS reset file?
+    Since each browser has its own default stylesheet, developers can use a CSS reset
+    to help make their own CSS file(s) more compatible across a wider range of 
+    browsers.
+
+KNOWLEDGE CHECK
+For accessibility in HTML, what is the attribute used to describe an image (on screen 
+readers or if it fails to load)?
+    alt.
+What is the difference between CSS Grid and Flexbox?
+    Flexbox is one-dimensional while grid is multidimensional.
+For a responsive website, should it be designed mobile-first or desktop-first?
+    Mobile, because it prioritizes what is functionally necessary given the lack of
+    space on mobile websites. In general, it is easier to scale up.
+Describe the components of the CSS Box Model.
+    Every HTML element is wrapped in 3 layers of 'boxes': padding, border, and margin.
+    The box model helps to orient elements within the space they exist in.
+In CSS, what is a breakpoint?
+    Breakpoints are how CSS deals with screens of various dimensions.
+What are the two main groups of CSS properties that control typography style?
+    Text and font.
+What is the !important rule in CSS?
+    It prioritizes a property and its values over other styling. It will override
+    all other styling. 
+    
