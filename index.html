@@ -2,12 +2,26 @@
 <html lang="eng">
     <meta charset="UTF-8">
     <title>Google remake</title>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
 
     <style>
         #navbar {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            margin: 0px 25px 30px 16px;
+        }
+        #navbar-left {
+            margin-top: 23px;
+        }
+        #navbar-right {
+            margin-top: 5px;
+            display: flex;
         }
         .navbar-link {
             font-family: arial, sans-serif;
@@ -15,8 +29,43 @@
             color: #222;
             text-decoration: none;
         }
+        #navbar-left > .navbar-link {
+            margin: 0px 13px;
+        }
+        #navbar-right > .navbar-link {
+            font-size: 18.5px;
+            margin-right: 24px;
+            margin-top: 20px;
+        }
         .navbar-link:hover {
             text-decoration: underline;
+        }
+        #apps-icon-wrapper {
+            padding: 15px 15px 10px 15px;
+        }
+        #apps-icon-wrapper:hover {
+            background-color: #e8e6e6;
+            border-radius: 50%;
+        }
+        #apps-icon {
+            font-size: 32px;
+            color: #5f6368;
+        }
+        #sign-in {
+            text-decoration: none;
+            background-color: #1a73e8;
+            color: white;
+            font-family: 'Roboto', arial, sans-serif;
+            font-size: 21px;
+            padding: 11px 36px 16px 36px;
+            margin: 4px 1px 8px 17px;
+            border-radius: 6px;
+            box-shadow: none;
+        }
+        #sign-in:hover {
+            background-color: #2b7de9;
+            box-shadow: 2px 2px 4px rgba(66,133,244,0.3),
+                        -1px 2px 4px rgba(66,133,244,0.3);
         }
         #searchbar {
             border-style: solid;
@@ -63,8 +112,12 @@
             <div id="navbar-right">
                 <a class="navbar-link" href="https://mail.google.com/mail/&ogbl">Gmail</a>
                 <a class="navbar-link" href="https://www.google.com/imghp?hl=en&ogbl">Images</a>
-                <button type="button">Apps Button</button>
-                <button type="button">Sign in</button>
+                <a href="">
+                    <div id="apps-icon-wrapper">
+                        <i class="material-icons" id="apps-icon">apps</i>
+                    </div>
+                </a>
+                <a id="sign-in" href="">Sign in</a>
             </div>
         </div>
         <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo">
