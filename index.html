@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <meta charset="UTF-8">
+    <title>Google remake</title>
+
+    <style>
+        #navbar {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .navbar-link {
+            font-family: arial, sans-serif;
+            font-size: 20px;
+            color: #222;
+            text-decoration: none;
+        }
+        .navbar-link:hover {
+            text-decoration: underline;
+        }
+        #searchbar {
+            border-style: solid;
+            border-width: 1px;
+        }
+        #bottom-btn-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .bottom-btn {
+            border-style: solid;
+            border-width: 1px;
+            margin: 1em;
+            padding: 0.5em 1em 0.5em 1em;
+        }
+        #footer {
+            display: flex;
+            justify-content: center;
+        }
+        #footer > #footer-content-container {
+            display: flex;
+            flex-direction: column;
+            width: 60vw;
+        }
+        #footer > #footer-content-container > #footer-top {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        #footer > #footer-content-container > #footer-btm {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    </style>
+
+    <body>
+        <div id="navbar">
+            <div id="navbar-left">
+                <a class="navbar-link" href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-navbar">About</a>
+                <a class="navbar-link" href="https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a>
+            </div>
+            <div id="navbar-right">
+                <a class="navbar-link" href="https://mail.google.com/mail/&ogbl">Gmail</a>
+                <a class="navbar-link" href="https://www.google.com/imghp?hl=en&ogbl">Images</a>
+                <button type="button">Apps Button</button>
+                <button type="button">Sign in</button>
+            </div>
+        </div>
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo">
+        <div id="searchbar">
+            <img href="" alt="magnifying glass icon">
+            <input type="text">
+        </div>
+        <div id="bottom-btn-container">
+            <button type="button" class="bottom-btn">Google Search</button>
+            <button type="button" class="bottom-btn">I'm Feeling Lucky</button>
+        </div>
+        <div id="footer">
+            <div id="footer-content-container">
+                <div id="footer-top">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC" alt="leaf">
+                    <a class="footer-link" href="https://sustainability.google/commitments/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content=">
+                        Carbon neutral since 2007</a>
+                </div>
+                <div id="footer-btm">
+                    <div id="footer-btm-left">
+                        <a class="footer-link" href="https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+                        <a class="footer-link" href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a>
+                        <a class="footer-link" href="https://google.com/search/howsearchworks/?fg=1">How Search works</a>
+                    </div>
+                    <div id="footer-btm-right">
+                        <a class="footer-link" href="https://policies.google.com/privacy?hl=en&fg=1">Privacy</a>
+                        <a class="footer-link" href="https://policies.google.com/terms?hl=en&fg=1">Terms</a>
+                        <a class="footer-link" href="https://support.google.com/accounts/answer/3118621?hl=en">Settings</a>
+                    </div>            
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
