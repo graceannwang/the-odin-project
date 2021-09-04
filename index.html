@@ -83,7 +83,7 @@
             justify-content: center;
             transform: scale(0.35, 0.35);
             margin-top: -60px;
-            margin-bottom: -68px;
+            margin-bottom: -65px;
         }
         #searchbar-wrapper {
             display: flex;
@@ -111,16 +111,26 @@
         #searchbar-input:focus {
             outline: none;
         }
+        .bottom-btn {
+            border-width: 0px;
+            box-shadow: none;
+            width: 10.5em;
+            height: 34px;
+            margin: 30px 10px 50px 0px;
+            font-size: 13px;
+            border-radius: 3.5px;
+            background-color: #f8f9fa;
+        }
+        .bottom-btn:hover {
+            box-shadow: 0.2px 0.2px 2px #a7aaaa;
+        }
+        #google-search-btn {
+            width: 9.6em;
+        }
         #bottom-btn-container {
             display: flex;
             flex-direction: row;
             justify-content: center;
-        }
-        .bottom-btn {
-            border-style: solid;
-            border-width: 1px;
-            margin: 1em;
-            padding: 0.5em 1em 0.5em 1em;
         }
 
         /* Footer */
@@ -176,7 +186,7 @@
                 </div>
             </div>
             <div id="bottom-btn-container">
-                <button type="button" class="bottom-btn">Google Search</button>
+                <button type="button" class="bottom-btn" id="google-search-btn">Google Search</button>
                 <button type="button" class="bottom-btn">I'm Feeling Lucky</button>
             </div>
         </div>
