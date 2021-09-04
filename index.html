@@ -10,11 +10,11 @@
     </head>
 
     <style>
+        /* Navigation Bar */
         #navbar {
             display: flex;
-            flex-direction: row;
             justify-content: space-between;
-            margin: 0px 25px 30px 16px;
+            margin: 0px 25px 0px 16px;
         }
         #navbar-left {
             margin-top: 8px;
@@ -38,7 +38,7 @@
         }
         #navbar-right > .navbar-link {
             font-size: 17.5px;
-            margin-right: 24px;
+            margin-right: 20px;
             margin-top: 17px;
         }
         .navbar-link:hover {
@@ -72,9 +72,44 @@
             box-shadow: 2px 2px 4px rgba(66,133,244,0.3),
                         -1px 2px 4px rgba(66,133,244,0.3);
         }
+
+        /* Middle Content */
+        #middle-content {
+            display: flex;
+            flex-direction: column;
+        }
+        #google-wrapper {
+            display: flex;
+            justify-content: center;
+            transform: scale(0.35, 0.35);
+            margin-top: -60px;
+            margin-bottom: -68px;
+        }
+        #searchbar-wrapper {
+            display: flex;
+            justify-content: center;
+        }
         #searchbar {
-            border-style: solid;
-            border-width: 1px;
+            border: 1px solid black;
+            width: 578px;
+            height: 43px;
+            border-radius: 25px;
+            border-color: #e4e6e8;
+        }
+        #search-icon {
+            margin-top: 10px;
+            margin-left: 10px;
+            transform: scale(0.83, 0.83);
+            color: #828385;
+        }
+        #searchbar-input {
+            border: none;
+            width: 523px;
+            position: relative;
+            bottom: 8px;
+        }
+        #searchbar-input:focus {
+            outline: none;
         }
         #bottom-btn-container {
             display: flex;
@@ -87,6 +122,8 @@
             margin: 1em;
             padding: 0.5em 1em 0.5em 1em;
         }
+
+        /* Footer */
         #footer {
             display: flex;
             justify-content: center;
@@ -109,6 +146,7 @@
     </style>
 
     <body>
+        <!-- Navigation bar -->
         <div id="navbar">
             <div id="navbar-left">
                 <a class="navbar-link" href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-navbar">About</a>
@@ -125,15 +163,25 @@
                 <a id="sign-in" href="">Sign in</a>
             </div>
         </div>
-        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo">
-        <div id="searchbar">
-            <img href="" alt="magnifying glass icon">
-            <input type="text">
+
+        <!-- Middle content -->
+        <div id="middle-content">
+            <div id="google-wrapper">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/800px-Google_2015_logo.svg.png" alt="google logo">
+            </div>
+            <div id="searchbar-wrapper">
+                <div id="searchbar">
+                    <i class="material-icons" id="search-icon">search</i>
+                    <input type="search" id="searchbar-input">
+                </div>
+            </div>
+            <div id="bottom-btn-container">
+                <button type="button" class="bottom-btn">Google Search</button>
+                <button type="button" class="bottom-btn">I'm Feeling Lucky</button>
+            </div>
         </div>
-        <div id="bottom-btn-container">
-            <button type="button" class="bottom-btn">Google Search</button>
-            <button type="button" class="bottom-btn">I'm Feeling Lucky</button>
-        </div>
+
+        <!-- Footer -->
         <div id="footer">
             <div id="footer-content-container">
                 <div id="footer-top">
