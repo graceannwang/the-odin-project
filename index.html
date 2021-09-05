@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="eng">
     <meta charset="UTF-8">
-    <title>Google remake</title>
+    <title>Gurgle</title>
     <head>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -123,6 +123,7 @@
         }
         .bottom-btn:hover {
             box-shadow: 0.2px 0.2px 2px #a7aaaa;
+            cursor: pointer;
         }
         #google-search-btn {
             width: 9.6em;
@@ -136,22 +137,37 @@
         /* Footer */
         #footer {
             display: flex;
-            justify-content: center;
-        }
-        #footer > #footer-content-container {
-            display: flex;
-            flex-direction: column;
-            width: 60vw;
-        }
-        #footer > #footer-content-container > #footer-top {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-        }
-        #footer > #footer-content-container > #footer-btm {
-            display: flex;
-            flex-direction: row;
             justify-content: space-between;
+            position: absolute;
+            bottom: -2px;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 13px 20px 2px 35px;
+            left: 0;
+            background-color: #f2f2f2;
+        }
+        .footer-link {
+            text-decoration: none;
+            font-size: 14px;
+            font-family: arial, sans-serif;
+            color: #70757a;
+            margin-right: 20px;
+        }
+        .footer-link:hover {
+            text-decoration: underline;
+        }
+        #leaf-icon {
+            transform: scale(0.68, 0.68);
+            margin-bottom: 4px;
+        }
+        #footer-center {
+            display: flex;
+            position: relative;
+            left: -55px;
+            top: -3px;
+        }
+        #footer-center .footer-link {
+            margin-top: 5px;
         }
     </style>
 
@@ -193,24 +209,23 @@
 
         <!-- Footer -->
         <div id="footer">
-            <div id="footer-content-container">
-                <div id="footer-top">
+            <div id="footer-left">
+                <a class="footer-link" href="https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+                <a class="footer-link" href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a>
+                <a class="footer-link" href="https://google.com/search/howsearchworks/?fg=1">How Search works</a>
+            </div>
+            <div id="footer-center">
+                <div id="leaf-icon">
                     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC" alt="leaf">
-                    <a class="footer-link" href="https://sustainability.google/commitments/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content=">
-                        Carbon neutral since 2007</a>
                 </div>
-                <div id="footer-btm">
-                    <div id="footer-btm-left">
-                        <a class="footer-link" href="https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
-                        <a class="footer-link" href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a>
-                        <a class="footer-link" href="https://google.com/search/howsearchworks/?fg=1">How Search works</a>
-                    </div>
-                    <div id="footer-btm-right">
-                        <a class="footer-link" href="https://policies.google.com/privacy?hl=en&fg=1">Privacy</a>
-                        <a class="footer-link" href="https://policies.google.com/terms?hl=en&fg=1">Terms</a>
-                        <a class="footer-link" href="https://support.google.com/accounts/answer/3118621?hl=en">Settings</a>
-                    </div>            
-                </div>
+                <a class="footer-link" href="https://sustainability.google/commitments/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content=">
+                    Carbon neutral since 2007</a>
+            </div>
+            <div id="footer-right">
+                <a class="footer-link" href="https://policies.google.com/privacy?hl=en&fg=1">Privacy</a>
+                <a class="footer-link" href="https://policies.google.com/terms?hl=en&fg=1">Terms</a>
+                <a class="footer-link" href="https://support.google.com/accounts/answer/3118621?hl=en">Settings</a>         
+            </div>
             </div>
         </div>
     </body>
