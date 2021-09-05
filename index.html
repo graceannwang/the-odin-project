@@ -83,7 +83,7 @@
             justify-content: center;
             transform: scale(0.35, 0.35);
             margin-top: -60px;
-            margin-bottom: -65px;
+            margin-bottom: -55px;
         }
         #searchbar-wrapper {
             display: flex;
@@ -96,6 +96,9 @@
             border-radius: 25px;
             border-color: #e4e6e8;
         }
+        #searchbar:hover {
+            box-shadow: 0.8px 0.8px 4px #cdcdcd;
+        }
         #search-icon {
             margin-top: 10px;
             margin-left: 10px;
@@ -106,7 +109,8 @@
             border: none;
             width: 523px;
             position: relative;
-            bottom: 8px;
+            bottom: 7px;
+            font-size: 15px;
         }
         #searchbar-input:focus {
             outline: none;
@@ -198,7 +202,7 @@
             <div id="searchbar-wrapper">
                 <div id="searchbar">
                     <i class="material-icons" id="search-icon">search</i>
-                    <input type="search" id="searchbar-input">
+                    <input type="text" id="searchbar-input">
                 </div>
             </div>
             <div id="bottom-btn-container">
