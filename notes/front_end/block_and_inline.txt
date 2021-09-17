@@ -1,0 +1,19 @@
+KNOWLEDGE CHECK
+What is the difference between a block element and an inline element?
+    Block elements are separated by newlines, whereas inline elements
+    lay horizontally adjacent to other elements. Margin and padding also
+    work differently on inline elements.
+What is the difference between an inline element and an inline-block element?
+    Inline-block elements are still able to lay horizontally adjacent to other
+    elements, but their width, height, margin and madding are able to be modified.
+What does the box-sizing property do?
+    Box-sizing informs the browser how to calculate the width and height of an
+    element. There are 2 types: content-box and border-box. Content-box applies
+    width and height parameters only to the content of the element, whereas 
+    border-box includes border and padding in width and height calculations.
+Would you use margin or padding to create more space between 2 elements?
+    Margin.
+Would you use margin or padding to create more space between the contents of an 
+element and its border?
+    Padding.
+    
