@@ -1,0 +1,6 @@
+KNOWLEDGE CHECK
+What’s the difference between a flex container and a flex item?
+    Flex container is any element which has display: flex applied to it.
+    A flex item is anything that resides within a flex container.
+How do you create a flex item?
+    Put it in a flex container.
